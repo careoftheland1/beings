@@ -9,7 +9,10 @@
       index.innerHTML = visibleProducts.map(product => `<article class="animal"><a class="animal-link" href="product.html?product=${encodeURIComponent(product.slug)}">${product.name}</a><a href="product.html?product=${encodeURIComponent(product.slug)}"><img class="animal-image" src="${product.image}" alt="${product.name} embroidered hat placeholder"></a></article>`).join('');
       filterButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === filter)));
     };
-    filterButtons.forEach(button => button.addEventListener('click', () => renderIndex(button.dataset.filter)));
+    filterButtons.forEach(button => button.addEventListener('click', () => {
+      renderIndex(button.dataset.filter);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }));
     renderIndex('All');
   }
   if (landing) { const dismiss = () => { landing.classList.add('is-gone'); landingDismiss?.classList.add('is-gone'); }; landingDismiss?.addEventListener('click', dismiss, { once: true }); document.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === 'Escape') dismiss(); }); landing.focus(); }
