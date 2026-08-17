@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Beings on the Land — embroidered objects from the Sky Islands.">
+    <title>beings on the land</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="index-page">
+    <header class="site-header">
+      <a class="site-title" href="index.html">beings on the land</a>
+      <nav aria-label="Primary"><a href="index.html">beings on the land</a><a href="about.html">know thy neighbor</a></nav>
+      <button class="cart-toggle" type="button" aria-expanded="false" aria-controls="cart-drawer">cart <span data-cart-count>0</span></button>
+    </header>
+    <main><section class="animal-index" id="animal-index" aria-label="Beings" aria-live="polite"></section></main>
+    <nav class="filter-nav" aria-label="Filter beings by taxon">
+      <button type="button" data-filter="All" aria-pressed="true">all</button>
+      <button type="button" data-filter="Birds" aria-pressed="false">birds</button>
+      <button type="button" data-filter="Snakes" aria-pressed="false">snakes</button>
+      <button type="button" data-filter="Lizards" aria-pressed="false">lizards</button>
+      <button type="button" data-filter="Amphibians" aria-pressed="false">amphibians</button>
+      <button type="button" data-filter="Mammals" aria-pressed="false">mammals</button>
+    </nav>
+    <div class="landing" id="landing" role="dialog" aria-label="Beings on the Land. Click anywhere to enter." tabindex="-1">
+      <p class="overlay-1">beings on<br>the land<span class="trademark">™</span></p>
+      <span>click anywhere</span>
+    </div>
+    <button class="landing-dismiss" id="landing-dismiss" type="button" aria-label="Enter Beings on the Land"></button>
+    <div id="cart-root"></div>
+    <script src="products.js"></script><script src="cart.js"></script><script src="script.js"></script>
+  </body>
+</html>

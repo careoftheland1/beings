@@ -1,0 +1,28 @@
+// Replace image paths with photographed hats when they are ready.
+const products = [
+  { slug: 'panthera-onca', name: 'Panthera onca', taxon: 'Mammals', image: 'images/panthera-onca.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'trogon-elegans', name: 'Trogon elegans', taxon: 'Birds', image: 'images/trogon-elegans.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'crotalus-pricei', name: 'Crotalus pricei', taxon: 'Snakes', image: 'images/crotalus-pricei.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'heloderma-suspectum', name: 'Heloderma suspectum', taxon: 'Lizards', image: 'images/heloderma-suspectum.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'lithobates-chiricahuensis', name: 'Lithobates chiricahuensis', taxon: 'Amphibians', image: 'images/lithobates-chiricahuensis.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'crotalus-molossus', name: 'Crotalus molossus', taxon: 'Snakes', image: 'images/crotalus-molossus.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'leptonycteris-nivalis', name: 'Leptonycteris nivalis', taxon: 'Mammals', image: 'images/leptonycteris-nivalis.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'lampropeltis-pyromelana', name: 'Lampropeltis pyromelana', taxon: 'Snakes', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'crotalus-willardi', name: 'Crotalus willardi', taxon: 'Snakes', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'crotalus-lepidus-klauberi', name: 'Crotalus lepidus klauberi', taxon: 'Snakes', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'micruroides-euryxanthus', name: 'Micruroides euryxanthus', taxon: 'Snakes', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'oxybelis-aeneus', name: 'Oxybelis aeneus', taxon: 'Snakes', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'elgaria-kingii', name: 'Elgaria kingii', taxon: 'Lizards', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'sceloporus-jarrovii', name: 'Sceloporus jarrovii', taxon: 'Lizards', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'dryophytes-arenicolor', name: 'Dryophytes arenicolor', taxon: 'Amphibians', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'craugastor-augusti', name: 'Craugastor augusti', taxon: 'Amphibians', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'myioborus-pictus', name: 'Myioborus pictus', taxon: 'Birds', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'cardellina-rubrifrons', name: 'Cardellina rubrifrons', taxon: 'Birds', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'lampornis-clemenciae', name: 'Lampornis clemenciae', taxon: 'Birds', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'ramosomyia-violiceps', name: 'Ramosomyia violiceps', taxon: 'Birds', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'rhynchopsitta-pachyrhyncha', name: 'Rhynchopsitta pachyrhyncha', taxon: 'Birds', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'leopardus-pardalis', name: 'Leopardus pardalis', taxon: 'Mammals', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'nasua-nasua', name: 'Nasua nasua', taxon: 'Mammals', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'bassariscus-astutus', name: 'Bassariscus astutus', taxon: 'Mammals', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'herpailurus-yagouaroundi', name: 'Herpailurus yagouaroundi', taxon: 'Mammals', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] }
+];
