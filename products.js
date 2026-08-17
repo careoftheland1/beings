@@ -1,6 +1,6 @@
 // Replace image paths with photographed hats when they are ready.
 const products = [
-  { slug: 'panthera-onca', name: 'Panthera onca', taxon: 'Mammals', image: 'images/panthera-onca.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'panthera-onca', name: 'Panthera onca', taxon: 'Mammals', image: 'images/panthera-onca.jpg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
   { slug: 'trogon-elegans', name: 'Trogon elegans', taxon: 'Birds', image: 'images/trogon-elegans.jpg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
   { slug: 'crotalus-pricei', name: 'Crotalus pricei', taxon: 'Snakes', image: 'images/crotalus-pricei.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
   { slug: 'heloderma-suspectum', name: 'Heloderma suspectum', taxon: 'Lizards', image: 'images/heloderma-suspectum.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
@@ -16,6 +16,7 @@ const products = [
   { slug: 'sceloporus-jarrovii', name: 'Sceloporus jarrovii', taxon: 'Lizards', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
   { slug: 'dryophytes-arenicolor', name: 'Dryophytes arenicolor', taxon: 'Amphibians', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
   { slug: 'craugastor-augusti', name: 'Craugastor augusti', taxon: 'Amphibians', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'incilius-alvarius', name: 'Incilius alvarius', taxon: 'Amphibians', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
   { slug: 'myioborus-pictus', name: 'Myioborus pictus', taxon: 'Birds', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
   { slug: 'cardellina-rubrifrons', name: 'Cardellina rubrifrons', taxon: 'Birds', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
   { slug: 'lampornis-clemenciae', name: 'Lampornis clemenciae', taxon: 'Birds', image: 'images/specimen-placeholder.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
