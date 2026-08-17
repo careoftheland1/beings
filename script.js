@@ -9,8 +9,10 @@
       index.innerHTML = visibleProducts.map(product => `<article class="animal"><a class="animal-link" href="product.html?product=${encodeURIComponent(product.slug)}">${product.name}</a><a href="product.html?product=${encodeURIComponent(product.slug)}"><img class="animal-image" src="${product.image}" alt="${product.name} embroidered hat placeholder"></a></article>`).join('');
       filterButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === filter)));
     };
+    const scrollParent = index.closest('main');
     filterButtons.forEach(button => button.addEventListener('click', () => {
       renderIndex(button.dataset.filter);
+      scrollParent?.scrollTo({ top: 0, behavior: 'smooth' });
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }));
     renderIndex('All');
