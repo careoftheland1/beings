@@ -1,7 +1,7 @@
 // Replace image paths with photographed hats when they are ready.
 const products = [
   { slug: 'panthera-onca', name: 'Panthera onca', taxon: 'Mammals', image: 'images/panthera-onca.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
-  { slug: 'trogon-elegans', name: 'Trogon elegans', taxon: 'Birds', image: 'images/trogon-elegans.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
+  { slug: 'trogon-elegans', name: 'Trogon elegans', taxon: 'Birds', image: 'images/trogon-elegans.jpg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
   { slug: 'crotalus-pricei', name: 'Crotalus pricei', taxon: 'Snakes', image: 'images/crotalus-pricei.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
   { slug: 'heloderma-suspectum', name: 'Heloderma suspectum', taxon: 'Lizards', image: 'images/heloderma-suspectum.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
   { slug: 'lithobates-chiricahuensis', name: 'Lithobates chiricahuensis', taxon: 'Amphibians', image: 'images/lithobates-chiricahuensis.svg', price: 40, colors: ['Black', 'Natural', 'Olive'] },
