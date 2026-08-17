@@ -29,12 +29,14 @@
     </header>
     <main><section class="animal-index" id="animal-index" aria-label="Beings" aria-live="polite"></section></main>
     <nav class="filter-nav" aria-label="Filter beings by taxon">
-      <button type="button" data-filter="All" aria-pressed="true">all</button>
-      <button type="button" data-filter="Birds" aria-pressed="false">birds</button>
-      <button type="button" data-filter="Snakes" aria-pressed="false">snakes</button>
-      <button type="button" data-filter="Lizards" aria-pressed="false">lizards</button>
-      <button type="button" data-filter="Amphibians" aria-pressed="false">amphibians</button>
-      <button type="button" data-filter="Mammals" aria-pressed="false">mammals</button>
+      <div class="filter-scroll">
+        <button type="button" data-filter="All" aria-pressed="true">all</button>
+        <button type="button" data-filter="Birds" aria-pressed="false">birds</button>
+        <button type="button" data-filter="Snakes" aria-pressed="false">snakes</button>
+        <button type="button" data-filter="Lizards" aria-pressed="false">lizards</button>
+        <button type="button" data-filter="Amphibians" aria-pressed="false">amphibians</button>
+        <button type="button" data-filter="Mammals" aria-pressed="false">mammals</button>
+      </div>
     </nav>
     <div class="landing" id="landing" role="dialog" aria-label="Beings on the Land. Click anywhere to enter." tabindex="-1">
       <p class="overlay-1">beings on<br>the land<span class="trademark">™</span></p>
