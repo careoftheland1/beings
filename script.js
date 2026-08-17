@@ -15,7 +15,7 @@
     }));
     renderIndex('All');
   }
-  if (landing) { const dismiss = () => { landing.classList.add('is-gone'); landingDismiss?.classList.add('is-gone'); }; landingDismiss?.addEventListener('click', dismiss, { once: true }); document.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === 'Escape') dismiss(); }); landing.focus(); }
+  if (landing) { const themeColor = document.querySelector('meta[name="theme-color"]'); const dismiss = () => { landing.classList.add('is-gone'); landingDismiss?.classList.add('is-gone'); themeColor?.setAttribute('content', '#f8f6f2'); }; landingDismiss?.addEventListener('click', dismiss, { once: true }); document.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === 'Escape') dismiss(); }); landing.focus(); }
   const root = document.getElementById('product-root');
   if (!root) return;
   const slug = new URLSearchParams(location.search).get('product'); const product = products.find(item => item.slug === slug) || products[0]; let color = product.colors[0]; document.title = `${product.name} — beings on the land`;
